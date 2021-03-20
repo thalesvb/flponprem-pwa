@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>ZIF_EX_FLP_PWA</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Interface for BAdI: ZFLP_PWA</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZIF_EX_FLP_PWA</CLSNAME>
+     <CMPNAME>IMAGE_RESOURCE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Handle image resources requested by Web Application Manifest</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZIF_EX_FLP_PWA</CLSNAME>
+     <CMPNAME>SERVICE_WORKER_JS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Service Worker JavaScript code</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZIF_EX_FLP_PWA</CLSNAME>
+     <CMPNAME>SERVICE_WORKER_REGISTRATION_JS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>JavaScript to register Service Worker.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZIF_EX_FLP_PWA</CLSNAME>
+     <CMPNAME>SERVICE_WORKER_SCOPE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Service Worker allowed scope.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZIF_EX_FLP_PWA</CLSNAME>
+     <CMPNAME>WEB_APP_MANIFEST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Web Application Manifest</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

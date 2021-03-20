@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Fiori Launchpad as Progressive Web App (PWA)</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>CLAS</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>/UI2/CL_FLP_HTTP_HANDLER</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>CLAS</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>/UI2/CL_FLP_HTTP_HANDLER</ORG_MAIN_NAME>
+    <PROGRAMNAME>/UI2/CL_FLP_HTTP_HANDLER======CP</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>/UI2/CL_FLP_HTTP_HANDLER======CP</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\TY:/UI2/CL_FLP_HTTP_HANDLER\ME:INJECT_CONFIG_METATAGS\SE:END\EI</FULL_NAME>
+     <SOURCE>
+      <item>    constants pwa_resources_path type string value &apos;/sap/public/zflp_pwa_res&apos;.</item>
+      <item>    data flp_pwa type ref to zflp_pwa.</item>
+      <item>    try.</item>
+      <item>      get badi flp_pwa.</item>
+      <item>      data(content) = ev_html_with_config.</item>
+      <item>      content = replace( val = content sub = `&lt;/head&gt;` with = |&lt;link rel=&quot;manifest&quot; href=&quot;{ pwa_resources_path }/manifest.webmanifest&quot;&gt; &lt;/head&gt;| occ = 1 ).</item>
+      <item>      content = replace( val = content sub = `&lt;/body&gt;` with = |&lt;script type=&quot;text/javascript&quot; src=&quot;{ pwa_resources_path }/app.js&quot; async&gt;&lt;/script&gt;&lt;/body&gt;| occ = 1 ).</item>
+      <item>      ev_html_with_config = content.</item>
+      <item>      catch cx_badi_not_implemented.</item>
+      <item>        &quot; No BAdI implemented = No reason to modify HTML.</item>
+      <item>    endtry.</item>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SOTR>
+    <item>
+     <HEADER>
+      <CONCEPT>08002774718E1EEB9093B2402E6342D7</CONCEPT>
+      <CREA_LAN>E</CREA_LAN>
+      <TRALA_TYPE>1</TRALA_TYPE>
+      <OBJID_VEC>AAI=</OBJID_VEC>
+     </HEADER>
+     <ENTRIES>
+      <SOTR_TEXT>
+       <CONCEPT>08002774718E1EEB9093B2402E6342D7</CONCEPT>
+       <LANGU>E</LANGU>
+       <LFD_NUM>0001</LFD_NUM>
+       <FLAG_CNTXT>X</FLAG_CNTXT>
+       <STATUS>R</STATUS>
+       <LENGTH>066</LENGTH>
+       <TEXT>Fiori Launchpad as Progressive Web App (PWA)</TEXT>
+      </SOTR_TEXT>
+     </ENTRIES>
+    </item>
+   </SOTR>
+   <SOTR_USE>
+    <SOTR_USE>
+     <PGMID>R3TR</PGMID>
+     <OBJECT>ENHO</OBJECT>
+     <OBJ_NAME>ZFLP_PWA</OBJ_NAME>
+     <CONCEPT>08002774718E1EEB9093B2402E6342D7</CONCEPT>
+     <LFD_NUM>0001</LFD_NUM>
+    </SOTR_USE>
+   </SOTR_USE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>BADI_DEF</TOOL>
+   <SHORTTEXT>Enable PWA resources injection into SAP Fiori Launchpad</SHORTTEXT>
+   <BADI_DATA>
+    <ENH_BADI_DATA>
+     <BADI_NAME>ZFLP_PWA</BADI_NAME>
+     <INTERFACE_NAME>ZIF_EX_FLP_PWA</INTERFACE_NAME>
+     <SINGLE_USE>X</SINGLE_USE>
+     <CONTEXT_MODE>N</CONTEXT_MODE>
+     <BADI_SHORTTEXT>BAdI to define PWA resources data</BADI_SHORTTEXT>
+     <BADI_SHORTTEXT_ID>08002774718E1EDBA285C3BE2C49460B</BADI_SHORTTEXT_ID>
+     <SAMPLE_IMPLS>
+      <CLASSNAME>ZCL_FLP_PWA_EXAMPLE</CLASSNAME>
+     </SAMPLE_IMPLS>
+     <IMG_DOCU_ID>ZFLP_PWA</IMG_DOCU_ID>
+    </ENH_BADI_DATA>
+   </BADI_DATA>
+   <SOTR>
+    <item>
+     <HEADER>
+      <CONCEPT>08002774718E1EDBA285B258675485FE</CONCEPT>
+      <CREA_LAN>E</CREA_LAN>
+      <TRALA_TYPE>1</TRALA_TYPE>
+      <OBJID_VEC>AAE=</OBJID_VEC>
+     </HEADER>
+     <ENTRIES>
+      <SOTR_TEXT>
+       <CONCEPT>08002774718E1EDBA285B258675485FE</CONCEPT>
+       <LANGU>E</LANGU>
+       <LFD_NUM>0001</LFD_NUM>
+       <FLAG_CNTXT>X</FLAG_CNTXT>
+       <STATUS>R</STATUS>
+       <LENGTH>083</LENGTH>
+       <TEXT>Enable PWA resources injection into SAP Fiori Launchpad</TEXT>
+      </SOTR_TEXT>
+     </ENTRIES>
+    </item>
+    <item>
+     <HEADER>
+      <CONCEPT>08002774718E1EDBA285C3BE2C49460B</CONCEPT>
+      <CREA_LAN>E</CREA_LAN>
+      <TRALA_TYPE>1</TRALA_TYPE>
+      <OBJID_VEC>AAE=</OBJID_VEC>
+     </HEADER>
+     <ENTRIES>
+      <SOTR_TEXT>
+       <CONCEPT>08002774718E1EDBA285C3BE2C49460B</CONCEPT>
+       <LANGU>E</LANGU>
+       <LFD_NUM>0001</LFD_NUM>
+       <FLAG_CNTXT>X</FLAG_CNTXT>
+       <STATUS>R</STATUS>
+       <LENGTH>050</LENGTH>
+       <TEXT>BAdI to define PWA resources data</TEXT>
+      </SOTR_TEXT>
+     </ENTRIES>
+    </item>
+   </SOTR>
+   <SOTR_USE>
+    <SOTR_USE>
+     <PGMID>R3TR</PGMID>
+     <OBJECT>ENHS</OBJECT>
+     <OBJ_NAME>ZFLP_PWA_SPOT</OBJ_NAME>
+     <CONCEPT>08002774718E1EDBA285B258675485FE</CONCEPT>
+     <LFD_NUM>0001</LFD_NUM>
+    </SOTR_USE>
+    <SOTR_USE>
+     <PGMID>R3TR</PGMID>
+     <OBJECT>ENHS</OBJECT>
+     <OBJ_NAME>ZFLP_PWA_SPOT</OBJ_NAME>
+     <CONCEPT>08002774718E1EDBA285C3BE2C49460B</CONCEPT>
+     <LFD_NUM>0001</LFD_NUM>
+    </SOTR_USE>
+   </SOTR_USE>
+  </asx:values>
+ </asx:abap>
+</abapGit>
